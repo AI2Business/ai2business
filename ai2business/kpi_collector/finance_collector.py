@@ -109,7 +109,7 @@ class DesignerFinanceCollector(BuilderFinanceCollector):
         self.key_word_list = key_word_list
         self.tickers = yf.Tickers(" ".join(self.key_word_list))
         self.df = pd.DataFrame()
-        self.dict = dict()
+        self.dict = {}
 
     @property
     def return_dataframe(self) -> pd.DataFrame:
@@ -123,12 +123,9 @@ class DesignerFinanceCollector(BuilderFinanceCollector):
     def all_trickers(
         tickers: yf.Tickers, key_word_list: list, func: str
     ) -> pd.DataFrame:
-        _dict = dict()
-        for key_word in key_word_list:
-            _dict[key_word.upper()] = getattr(
+        return {key_word.upper(): getattr(
                 getattr(tickers.tickers, key_word.upper()), func
-            )
-        return _dict
+            ) for key_word in key_word_list}
 
     def get_chart_history(
         self,

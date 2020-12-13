@@ -28,7 +28,7 @@ class AutoMLModels:
     9. [Time-Series-Forcast](https://github.com/keras-team/autokeras/blob/9a6c49badad67a03d537de8cebbe6ea6eb66fa69/autokeras/tasks/time_series_forecaster.py)
 
 
-
+    Here is text
 
 
     # Arguments:
@@ -59,7 +59,7 @@ class AutoMLModels:
     ) -> None:
         """Defining the common parameters for all models.
 
-
+        Text
 
         Args:
             directory (str, optional): Path of the directory to save the search outputs. Defaults to None.
@@ -89,7 +89,9 @@ class AutoMLModels:
     ) -> ak.ImageClassifier:
         """Image Classification.
 
-        Args:
+        Description
+
+        # Arguments:
             num_classes (int, optional): Number of classes. Defaults to None.
             multi_label (bool, optional): The target is multi-labeled. Defaults to False.
 

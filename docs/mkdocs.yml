@@ -1,5 +1,5 @@
 site_name: AI2Business
-site_url: https://ai2business.github.io/ai2business/
+site_url: https://anselmoo.github.io/ai2business/
 site_description: Smart solutions for Business with AI.
 site_author: AI2Business & coworkers
 
@@ -84,4 +84,5 @@ nav:
           - Finance-Collector: finance_collector.md
           - Trends-Collector: trends_collector.md
           - Datasets: datasets.md
-          - AutoML: automl.md
+      - Auto Machine Learning Services:
+          - AutoML for Deep Learning: automl.md

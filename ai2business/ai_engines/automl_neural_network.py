@@ -26,6 +26,22 @@ class AutoMLModels:
     6. [Structured-Data-Regression](https://autokeras.com/tutorial/structured_data_regression/)
     7. [Mulit-Models](https://autokeras.com/tutorial/multi/)
     9. [Time-Series-Forcast](https://github.com/keras-team/autokeras/blob/9a6c49badad67a03d537de8cebbe6ea6eb66fa69/autokeras/tasks/time_series_forecaster.py)
+
+
+
+
+
+    # Arguments:
+        directory (str, optional): Path of the directory to save the search outputs. Defaults to None.
+        loss (str, optional): Keras loss function. Defaults to None, which means 'mean_squared_error'.
+        objective (str, optional): Model metric. Defaults to "val_loss".
+        overwrite (bool, optional): Overwrite existing projects. Defaults to False.
+        project_name (str, optional): Project Name. Defaults to "AutoML_DeepLearning".
+        max_model_size (int, optional): Maximum number of models to evaluate. Defaults to None.
+        max_trials (int, optional): Maximum number of trials for building a model. Defaults to 100.
+        metrics (str, optional): The metric of the validation. Defaults to None.
+        seed (int, optional): Random shuffling number. Defaults to None.
+        tuner (str, optional): The tuner is engine for suggestions the concept of the new models. It can be either a string 'greedy', 'bayesian', 'hyperband' or 'random' or a subclass of AutoTuner. If it is unspecific, the  first evaluates the most commonly used models for the task before exploring other models
     """
 
     def __init__(
@@ -43,7 +59,9 @@ class AutoMLModels:
     ) -> None:
         """Defining the common parameters for all models.
 
-        # Args:
+
+
+        Args:
             directory (str, optional): Path of the directory to save the search outputs. Defaults to None.
             loss (str, optional): Keras loss function. Defaults to None, which means 'mean_squared_error'.
             objective (str, optional): Model metric. Defaults to "val_loss".
@@ -687,9 +705,7 @@ class AutoMLSave(Procedure):
         self.model_name = model_name
 
     def perform_job(self, automl_model: dict):
-        """perform_job [summary]
-
-        [extended_summary]
+        """Perform the of job of class `AutoMLSave`.
 
         Args:
             automl_model (dict): [description]

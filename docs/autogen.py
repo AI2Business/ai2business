@@ -20,7 +20,7 @@ aliases_needed = [
 ]
 
 
-ROOT = "https://ai2business.github.io/ai2business/"
+ROOT = "https://anselmoo.github.io/ai2business/"
 
 ai2business_dir = pathlib.Path(__file__).resolve().parents[1]
 

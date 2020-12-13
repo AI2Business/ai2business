@@ -1,9 +1,9 @@
 name: Python docs
 on:
   push:
-    branches: [master, main, docs, docs_new]
+    branches: [master, main, docs ]
   pull_request:
-    branches: [master, main, docs, docs_new]
+    branches: [master, main, docs ]
 
 jobs:
   documentation:

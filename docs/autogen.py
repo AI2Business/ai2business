@@ -29,7 +29,7 @@ def generate(dest_dir):
     api_dir = ai2business_dir / "docs" / "api"
     doc_generator = keras_autodoc.DocumentationGenerator(
         PAGES,
-        "https://github.com/ai2business/ai2business/blob/main",
+        "https://github.com/anselmoo/ai2business/blob/main",
         api_dir,
         # template_dir,
         # ai2business_dir / 'examples',

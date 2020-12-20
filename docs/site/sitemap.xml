@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://ai2business.github.io/ai2business/</loc>
-     <lastmod>2020-12-15</lastmod>
+     <lastmod>2020-12-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ai2business.github.io/ai2business/Sample_Generators/</loc>
+     <lastmod>2020-12-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ai2business.github.io/ai2business/Key_Performance_Collection/</loc>
+     <lastmod>2020-12-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://ai2business.github.io/ai2business/AutoML_for_NeuralNetworks/</loc>
-     <lastmod>2020-12-15</lastmod>
+     <lastmod>2020-12-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ai2business.github.io/ai2business/Oneliner/</loc>
+     <lastmod>2020-12-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://ai2business.github.io/ai2business/tutorials/trend_search_tutorial/</loc>
-     <lastmod>2020-12-15</lastmod>
+     <lastmod>2020-12-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://ai2business.github.io/ai2business/tutorials/timeseries_forecast_tutorial/</loc>
+     <lastmod>2020-12-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://ai2business.github.io/ai2business/finance_collector/</loc>
-     <lastmod>2020-12-15</lastmod>
+     <lastmod>2020-12-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://ai2business.github.io/ai2business/trends_collector/</loc>
-     <lastmod>2020-12-15</lastmod>
+     <lastmod>2020-12-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://ai2business.github.io/ai2business/datasets/</loc>
-     <lastmod>2020-12-15</lastmod>
+     <lastmod>2020-12-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://ai2business.github.io/ai2business/automl/</loc>
-     <lastmod>2020-12-15</lastmod>
+     <lastmod>2020-12-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

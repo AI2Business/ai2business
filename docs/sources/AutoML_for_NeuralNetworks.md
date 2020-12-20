@@ -11,7 +11,7 @@ ai2business.ai_engines.automl_neural_network.AutoMLModels(
     overwrite=False,
     project_name="AutoML_DeepLearning",
     max_model_size=None,
-    max_trials=1,
+    max_trials=None,
     metrics=None,
     seed=None,
     tuner=None,

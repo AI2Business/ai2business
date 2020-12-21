@@ -74,8 +74,8 @@ plugins:
   - search
   - macros
   - mkdocstrings:
-      watch:
-        - ai2business
+        watch:
+          - ai2business
   - git-revision-date-localized
 
 nav:
@@ -93,7 +93,7 @@ nav:
       - Key Performance Collector:
           - Finance-Collector: finance_collector_api.md
           - Trends-Collector: trends_collector_api.md
-      - Datasets: 
+      - Datasets:
           - Sample Generator: sample_generator_api.md
       - Auto Machine Learning:
           - Deep Learning: deep_learning_api.md

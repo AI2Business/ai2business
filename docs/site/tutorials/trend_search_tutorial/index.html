@@ -99,7 +99,7 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../AutoML_for_NeuralNetworks/">
+<a class="md-tabs__link" href="../../Sample_Generators/">
         Documentation
       </a>
 </li>
@@ -109,7 +109,7 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../finance_collector/">
+<a class="md-tabs__link" href="../../finance_collector_api.md">
         API
       </a>
 </li>
@@ -157,8 +157,23 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../Sample_Generators/">
+      Sample Generators
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Key_Performance_Collection/">
+      Trend Search
+    </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../AutoML_for_NeuralNetworks/">
       AutoMLRun
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Oneliner/">
+      Oneliner
     </a>
 </li>
 </ul>
@@ -227,6 +242,11 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../timeseries_forecast_tutorial/">
+      AutoML
+    </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -255,23 +275,53 @@
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../finance_collector/">
+<a class="md-nav__link" href="../../finance_collector_api.md">
       Finance-Collector
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../trends_collector/">
+<a class="md-nav__link" href="../../trends_collector_api.md">
       Trends-Collector
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../datasets/">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" id="nav-4-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-4-2">
       Datasets
+      <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Datasets" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-4-2">
+<span class="md-nav__icon md-icon"></span>
+        Datasets
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sample_generator_api.md">
+      Sample Generator
     </a>
 </li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" id="nav-4-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-4-3">
+      Auto Machine Learning
+      <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Auto Machine Learning" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="nav-4-3">
+<span class="md-nav__icon md-icon"></span>
+        Auto Machine Learning
+      </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../automl/">
-      AutoML
+<a class="md-nav__link" href="../../deep_learning_api.md">
+      Deep Learning
     </a>
 </li>
 </ul>
@@ -342,10 +392,10 @@
 <h2 id="building-a-search-trend-dataframe">Building a search trend dataframe</h2>
 <p>Trend search can be differs roughly in two major criteria:</p>
 <ol>
-<li>A <em>active</em> driven search by using <code>keyword</code> like "Corona", "S&amp;P 500", "Hope"</li>
+<li>An <em>active</em> driven search by using <code>keyword</code> like "Corona", "S&amp;P 500", "Hope"</li>
 <li>A <em>passive</em> driven search by using the community feedback to gather actual topics.</li>
 </ol>
-<p>In this context, the <code>trend-search</code>-module is a designed in a builder model to add much searches as required in a collection <code>{}</code>.</p>
+<p>In this context, the <code>trend-search</code>-module is a designed as a <a href="https://en.wikipedia.org/wiki/Builder_pattern">builder model</a> to add much searches as required in a collection <code>{}</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">AI2Business</span><span class="o">/</span><span class="n">ai2business</span><span class="o">.</span><span class="n">git</span>
 </code></pre></div>
 <h3 id="loading-the-model-trends_collector">Loading the model <code>trends_collector</code></h3>
@@ -408,7 +458,7 @@
 <div class="md-source-date">
 <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 21, 2020</span>
 </small>
 </div>
 </article>
@@ -418,7 +468,7 @@
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<a class="md-footer-nav__link md-footer-nav__link--prev" href="../../AutoML_for_NeuralNetworks/" rel="prev">
+<a class="md-footer-nav__link md-footer-nav__link--prev" href="../../Oneliner/" rel="prev">
 <div class="md-footer-nav__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -427,17 +477,17 @@
 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                AutoMLRun
+                Oneliner
               </div>
 </div>
 </a>
-<a class="md-footer-nav__link md-footer-nav__link--next" href="../../finance_collector/" rel="next">
+<a class="md-footer-nav__link md-footer-nav__link--next" href="../timeseries_forecast_tutorial/" rel="next">
 <div class="md-footer-nav__title">
 <div class="md-ellipsis">
 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Finance-Collector
+                AutoML
               </div>
 </div>
 <div class="md-footer-nav__button md-icon">

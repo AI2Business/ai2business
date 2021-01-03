@@ -35,7 +35,7 @@ A dependency between the years is obviously given, even if single event trigger 
 ```python
 keyword_list: list = ["2017", "2018", "2019", "2020"]
 timeframe = oneliner.TrendSearch.four_step_search(keyword_list=keyword_list)
-timeframe["interest_over_time"].plot()
+timeframe["get_interest_over_time"].plot()
 
 ```
 
@@ -44,9 +44,9 @@ And the Pearson-correlation shows the negative linear dependency between the cur
 
 
 ```python
-timeframe["interest_over_time"].corr()
+timeframe["get_interest_over_time"].corr()
 
-dataset = timeframe["interest_over_time"].drop(columns="isPartial")
+dataset = timeframe["get_interest_over_time"].drop(columns="isPartial")
 
 print(dataset)
 

@@ -59,23 +59,23 @@ markdown_extensions:
   - pymdownx.caret:
   - pymdownx.smartsymbols:
   - pymdownx.magiclink:
-      repo_url_shortener: true
-      repo_url_shorthand: true
-      social_url_shorthand: true
-      social_url_shortener: true
-      user: ai2business
-      repo: ai2business
+        repo_url_shortener: true
+        repo_url_shorthand: true
+        social_url_shorthand: true
+        social_url_shortener: true
+        user: ai2business
+        repo: ai2business
   - pymdownx.highlight:
-      extend_pygments_lang:
-        - name: php-inline
-          lang: php
-          options:
-            startinline: true
-        - name: pycon3
-          lang: pycon
-          options:
-            python3: true
-      linenums_style: pymdownx-inline
+        extend_pygments_lang:
+          - name: php-inline
+            lang: php
+            options:
+                startinline: true
+          - name: pycon3
+            lang: pycon
+            options:
+                python3: true
+        linenums_style: pymdownx-inline
 
 extra_javascript:
   - https://unpkg.com/mermaid@8.4.4/dist/mermaid.min.js

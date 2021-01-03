@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://ai2business.github.io/ai2business/trends_collector/">
       
       <link rel="shortcut icon" href="../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.73f7c429.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
@@ -221,7 +221,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../finance_collector_api.md" class="md-tabs__link">
+      <a href="../api/finance_collector_api.md" class="md-tabs__link">
         API
       </a>
     </li>
@@ -482,7 +482,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../finance_collector_api.md" class="md-nav__link">
+    <a href="../api/finance_collector_api.md" class="md-nav__link">
       Finance-Collector
     </a>
   </li>
@@ -495,7 +495,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../trends_collector_api.md" class="md-nav__link">
+    <a href="../api/trends_collector_api.md" class="md-nav__link">
       Trends-Collector
     </a>
   </li>
@@ -539,7 +539,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../sample_generator_api.md" class="md-nav__link">
+    <a href="../api/sample_generator_api.md" class="md-nav__link">
       Sample Generator
     </a>
   </li>
@@ -565,11 +565,55 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" data-md-state="indeterminate" type="checkbox" id="nav-4-3" checked>
     
     <label class="md-nav__link" for="nav-4-3">
+      Visualization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Visualization" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Visualization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/data_visualization_api.md" class="md-nav__link">
+      Data Visualization
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" data-md-state="indeterminate" type="checkbox" id="nav-4-4" checked>
+    
+    <label class="md-nav__link" for="nav-4-4">
       Auto Machine Learning
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Auto Machine Learning" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-4">
         <span class="md-nav__icon md-icon"></span>
         Auto Machine Learning
       </label>
@@ -583,7 +627,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../deep_learning_api.md" class="md-nav__link">
+    <a href="../api/deep_learning_api.md" class="md-nav__link">
       Deep Learning
     </a>
   </li>
@@ -1013,7 +1057,7 @@
 <h2 class="hidden-toc" href="#ai2business.kpi_collector.trends_collector" id="ai2business.kpi_collector.trends_collector" style="visibility: hidden; position: absolute;">
         </h2>
 <div class="doc doc-contents first">
-<p>Trends Collection Module: Collecting Search Trends via http-API</p>
+<p>Trends Collection Module: Collecting Search Trends via http-API.</p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-class">
 <h2 class="doc doc-heading" id="ai2business.kpi_collector.trends_collector.BuilderTrendsCollector">
@@ -1401,7 +1445,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <td><code>timeframe</code></td>
 <td><code>str</code></td>
 <td>
-<p>Time frame, respectively, period to search for.</p>
+<p>Time frame, respectively, period to search for. Defaults to "today 5-y".</p>
 </td>
 <td><code>'today 5-y'</code></td>
 </tr>
@@ -1465,8 +1509,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 
 <span class="sd">    Args:</span>
 <span class="sd">        keyword_list (list): Keyword-list with the items to search for.</span>
-<span class="sd">        timeframe (str, optional): Time frame, respectively, period to search for.</span>
-<span class="sd">        Defaults to "today 5-y".</span>
+<span class="sd">        timeframe (str, optional): Time frame, respectively, period to search for. Defaults to "today 5-y".</span>
 <span class="sd">        language (str, optional): Search language. Defaults to "en-US".</span>
 <span class="sd">        category (int, optional): Define a specific [search category](https://github.com/pat310/google-trends-api/wiki/Google-Trends-Categories). Defaults to 0.</span>
 <span class="sd">        timezone (int, optional): [Search timezone](https://developers.google.com/maps/documentation/timezone/overview). Defaults to 360.</span>
@@ -1511,7 +1554,7 @@ get_categories<span class="p">(</span><span class="bp">self</span><span class="p
 <pre><span></span><code><span class="k">def</span> <span class="nf">get_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">"""Request available categories data for the current search."""</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">categories</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_categories</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">categories</span><span class="p">(),</span>
     <span class="p">)</span>
 </code></pre>
@@ -1634,7 +1677,7 @@ get_historical_interest<span class="p">(</span><span class="bp">self</span><span
 <span class="sd">        hour_end (int): Final hour</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">get_historical_interest</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_historical_interest</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">get_historical_interest</span><span class="p">(</span>
             <span class="n">keywords</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span><span class="p">,</span>
             <span class="n">year_start</span><span class="o">=</span><span class="n">year_start</span><span class="p">,</span>
@@ -1697,7 +1740,7 @@ get_interest_by_region<span class="p">(</span><span class="bp">self</span><span 
 <span class="sd">        resolution (str): The resolution of the subregion.</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">interest_by_region</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_interest_by_region</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">interest_by_region</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="n">resolution</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">),</span>
     <span class="p">)</span>
 </code></pre>
@@ -1721,7 +1764,7 @@ get_interest_over_time<span class="p">(</span><span class="bp">self</span><span 
 <pre><span></span><code><span class="k">def</span> <span class="nf">get_interest_over_time</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">"""Request data from a interest over time search."""</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">interest_over_time</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_interest_over_time</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">interest_over_time</span><span class="p">(),</span>
     <span class="p">)</span>
 </code></pre>
@@ -1745,7 +1788,7 @@ get_related_queries<span class="p">(</span><span class="bp">self</span><span cla
 <pre><span></span><code><span class="k">def</span> <span class="nf">get_related_queries</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">"""Request data of a related queries based on the keyword."""</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">related_queries</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_related_queries</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">related_queries</span><span class="p">(),</span>
     <span class="p">)</span>
 </code></pre>
@@ -1769,7 +1812,7 @@ get_related_topics<span class="p">(</span><span class="bp">self</span><span clas
 <pre><span></span><code><span class="k">def</span> <span class="nf">get_related_topics</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">"""Request data of a related topics based on the keyword."""</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">related_topics</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">related_topics</span><span class="p">()</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_related_topics</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">related_topics</span><span class="p">()</span>
     <span class="p">)</span>
 </code></pre>
 </div>
@@ -1792,7 +1835,7 @@ get_suggestions<span class="p">(</span><span class="bp">self</span><span class="
 <pre><span></span><code><span class="k">def</span> <span class="nf">get_suggestions</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">"""Request data from keyword suggestion dropdown search."""</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">suggestions</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_suggestions</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="p">{</span>
             <span class="n">keyword</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">suggestions</span><span class="p">(</span><span class="n">keyword</span><span class="o">=</span><span class="n">keyword</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">keyword_list</span>
@@ -1844,7 +1887,7 @@ get_today_searches<span class="p">(</span><span class="bp">self</span><span clas
 <span class="sd">        today_country (str): Name of the country of intrest.</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">today_searches</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_today_searches</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">today_searches</span><span class="p">(</span><span class="n">pn</span><span class="o">=</span><span class="n">today_country</span><span class="p">),</span>
     <span class="p">)</span>
 </code></pre>
@@ -1902,7 +1945,7 @@ get_top_charts<span class="p">(</span><span class="bp">self</span><span class="p
 <span class="sd">        top_country (str): Name of the country of intrest.</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">top_charts</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_top_charts</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">top_charts</span><span class="p">(</span>
             <span class="n">date</span><span class="p">,</span> <span class="n">hl</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">language</span><span class="p">,</span> <span class="n">tz</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">timezone</span><span class="p">,</span> <span class="n">geo</span><span class="o">=</span><span class="n">top_country</span>
         <span class="p">),</span>
@@ -1953,7 +1996,7 @@ get_trending_searches<span class="p">(</span><span class="bp">self</span><span c
 <span class="sd">        trend_country (str, optional): Name of the country of intrest. Defaults to "united_states".</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_product</span><span class="o">.</span><span class="n">add_product</span><span class="p">(</span>
-        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">trending_searches</span><span class="p">,</span>
+        <span class="n">key</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_trending_searches</span><span class="p">,</span>
         <span class="n">value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pytrends</span><span class="o">.</span><span class="n">trending_searches</span><span class="p">(</span><span class="n">pn</span><span class="o">=</span><span class="n">trend_country</span><span class="p">),</span>
     <span class="p">)</span>
 </code></pre>
@@ -2056,12 +2099,12 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">)</s
 
       </h3>
 <div class="doc doc-contents ">
-<p>Initialization of TrendProduct</p>
+<p>Initialization of TrendProduct.</p>
 <details class="quote">
           <summary>Source code in <code>ai2business/kpi_collector/trends_collector.py</code></summary>
           <div class="highlight">
 <pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">"""Initialization of TrendProduct"""</span>
+    <span class="sd">"""Initialization of TrendProduct."""</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">product_parts</span> <span class="o">=</span> <span class="p">{}</span>
 </code></pre>
 </div>
@@ -2135,8 +2178,8 @@ add_product<span class="p">(</span><span class="bp">self</span><span class="p">,
       </h2>
 <div class="doc doc-contents ">
 <p>TrendsCollector is in charge for executing the functions.</p>
-<p>During the execution, <code>TrendsCollector</code> can construct several product variations
-using the same building steps.</p>
+<p>During the execution, <code>TrendsCollector</code> can construct several product
+variations using the same building steps.</p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="ai2business.kpi_collector.trends_collector.TrendsCollector.builder">
@@ -2640,7 +2683,7 @@ make_wordcloud<span class="p">(</span><span class="bp">self</span><span class="p
 <div class="doc doc-contents ">
 <p>Make a worldcloud of related words and their suggestions.</p>
 <h2 id="note">Note:</h2>
-<p>The summation of different search engines can cause timeout errors due to lenght of the search.</p>
+<p>The summation of different search engines can cause timeout errors due to length of the search.</p>
 <details class="quote">
           <summary>Source code in <code>ai2business/kpi_collector/trends_collector.py</code></summary>
           <div class="highlight">
@@ -2650,7 +2693,7 @@ make_wordcloud<span class="p">(</span><span class="bp">self</span><span class="p
 <span class="sd">    Note:</span>
 <span class="sd">    ---</span>
 
-<span class="sd">    The summation of different search engines can cause timeout errors due to lenght of the search.</span>
+<span class="sd">    The summation of different search engines can cause timeout errors due to length of the search.</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_related_topics</span><span class="p">()</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_related_queries</span><span class="p">()</span>
@@ -2675,7 +2718,7 @@ make_wordcloud<span class="p">(</span><span class="bp">self</span><span class="p
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 25, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2021</span>
     
   </small>
 </div>

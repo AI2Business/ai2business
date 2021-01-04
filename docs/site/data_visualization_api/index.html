@@ -3636,17 +3636,17 @@ visual_missing_data<span class="p">(</span><span class="bp">self</span><span cla
 <p class="admonition-title">Visualization of nullity results, respectively, missing values!</p>
 <p>Possible missing data will be visualized by:</p>
 <ol>
-<li>nullity matrix highlights out patterns and structures in data completion.
-    <img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_matrix_bc6141f519e4eea9e6a0d5fe84115d65.png" /></li>
-<li>nullity bar shows the available data as a series of single bars.
-    ![Placeholder]<a href="https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_bar_9918e972a769781d322ba1e18fe8f86c.png">https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_bar_9918e972a769781d322ba1e18fe8f86c.png</a>){: loading=lazy }</li>
-<li>nullity heatmap point out the correlation between the presence and absence data.
-    <img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_heatmap_d46e69f559bd7b713b7a6c3ceb0f9968.png" /></li>
-<li>nullity dendrogram visualize the correlate variable completion.
-    <img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_dendrogram_15a148832cd43d6d249d56671a0fab6f.png" /></li>
+<li>nullity matrix highlights out patterns and structures in data completion.</li>
+<li>nullity bar shows the available data as a series of single bars.</li>
+<li>nullity heatmap point out the correlation between the presence and absence data.</li>
+<li>nullity dendrogram visualize the correlate variable completion.</li>
 </ol>
 <p>For more information see: <a class="magiclink magiclink-github magiclink-repository" href="https://github.com/ResidentMario/missingno" title="GitHub Repository: ResidentMario/missingno">ResidentMario/missingno</a></p>
 </div>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_matrix_bc6141f519e4eea9e6a0d5fe84115d65.png" />
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_bar_9918e972a769781d322ba1e18fe8f86c.png" />
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_heatmap_d46e69f559bd7b713b7a6c3ceb0f9968.png" />
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_dendrogram_15a148832cd43d6d249d56671a0fab6f.png" /></p>
 <details class="quote">
           <summary>Source code in <code>ai2business/visualization/data_visualization.py</code></summary>
           <div class="highlight">
@@ -3669,15 +3669,17 @@ visual_missing_data<span class="p">(</span><span class="bp">self</span><span cla
 <span class="sd">        Possible missing data will be visualized by:</span>
 
 <span class="sd">        1. nullity matrix highlights out patterns and structures in data completion.</span>
-<span class="sd">            ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_matrix_bc6141f519e4eea9e6a0d5fe84115d65.png){: loading=lazy }</span>
 <span class="sd">        2. nullity bar shows the available data as a series of single bars.</span>
-<span class="sd">            ![Placeholder]https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_bar_9918e972a769781d322ba1e18fe8f86c.png){: loading=lazy }</span>
 <span class="sd">        3. nullity heatmap point out the correlation between the presence and absence data.</span>
-<span class="sd">            ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_heatmap_d46e69f559bd7b713b7a6c3ceb0f9968.png){: loading=lazy }</span>
 <span class="sd">        4. nullity dendrogram visualize the correlate variable completion.</span>
-<span class="sd">            ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_dendrogram_15a148832cd43d6d249d56671a0fab6f.png){: loading=lazy }</span>
 
 <span class="sd">        For more information see: [https://github.com/ResidentMario/missingno](https://github.com/ResidentMario/missingno)</span>
+
+<span class="sd">    ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_matrix_bc6141f519e4eea9e6a0d5fe84115d65.png){: loading=lazy }</span>
+<span class="sd">    ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_bar_9918e972a769781d322ba1e18fe8f86c.png){: loading=lazy }</span>
+<span class="sd">    ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_heatmap_d46e69f559bd7b713b7a6c3ceb0f9968.png){: loading=lazy }</span>
+<span class="sd">    ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/nullity/get_nullity_dendrogram_15a148832cd43d6d249d56671a0fab6f.png){: loading=lazy }</span>
+
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">get_nullity_matrix</span><span class="p">(</span>
         <span class="n">n_columns</span><span class="o">=</span><span class="n">n_columns</span><span class="p">,</span> <span class="n">per_columns</span><span class="o">=</span><span class="n">per_columns</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
@@ -3813,7 +3815,7 @@ add_product<span class="p">(</span><span class="bp">self</span><span class="p">,
 </tr>
 <tr>
 <td><code>value</code></td>
-<td><code>&lt;function subplot at 0x7f000ce7bc10&gt;</code></td>
+<td><code>&lt;function subplot at 0x7f08296a7c10&gt;</code></td>
 <td>
 <p>Return value as <code>matplotlib</code>-class of subplots.</p>
 </td>
@@ -4068,14 +4070,22 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="admonition note">
 <p class="admonition-title">Appearance-Modes</p>
 <ol>
-<li>Light-Mode without Grid
-    <img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_805fabb7bbea3a9e807d3c2444bbaa4e.png" /></li>
-<li>Light-Mode with Grid
-    <img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_520cb6360c9fb9c61977a303213f1340.png" /></li>
-<li>Dark-Mode without Grid
-    <img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_6ef44df80722a1c466d0a4c47b8f2433.png" /></li>
-<li>Dark-Mode with Grid
-    <img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_65d5fcb713a18d25b1c1f6b504836776.png" /></li>
+<li>
+<p>Light-Mode without Grid</p>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_805fabb7bbea3a9e807d3c2444bbaa4e.png" /></p>
+</li>
+<li>
+<p>Light-Mode with Grid</p>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_520cb6360c9fb9c61977a303213f1340.png" /></p>
+</li>
+<li>
+<p>Dark-Mode without Grid</p>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_6ef44df80722a1c466d0a4c47b8f2433.png" /></p>
+</li>
+<li>
+<p>Dark-Mode with Grid</p>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_65d5fcb713a18d25b1c1f6b504836776.png" /></p>
+</li>
 </ol>
 </div>
 <p>!!! note "Figuere Size" Due to the default settings of <code>missingno</code>, the figure size has to be defined in advance.</p>
@@ -4111,13 +4121,21 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <span class="sd">    !!! note "Appearance-Modes"</span>
 
 <span class="sd">        1. Light-Mode without Grid</span>
+
 <span class="sd">            ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_805fabb7bbea3a9e807d3c2444bbaa4e.png){: loading=lazy }</span>
+
 <span class="sd">        2. Light-Mode with Grid</span>
+
 <span class="sd">            ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_520cb6360c9fb9c61977a303213f1340.png){: loading=lazy }</span>
+
 <span class="sd">        3. Dark-Mode without Grid</span>
+
 <span class="sd">            ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_6ef44df80722a1c466d0a4c47b8f2433.png){: loading=lazy }</span>
+
 <span class="sd">        4. Dark-Mode with Grid</span>
+
 <span class="sd">            ![Placeholder](https://github.com/AI2Business/ai2business/tree/main/docs/images/appearance/get_lineplot_65d5fcb713a18d25b1c1f6b504836776.png){: loading=lazy }</span>
+
 
 <span class="sd">    !!! note "Figuere Size" Due to the default settings of `missingno`, the figure size has to be defined in advance.</span>
 <span class="sd">    """</span>
@@ -5295,7 +5313,7 @@ dark_mode<span class="p">(</span><span class="n">grid</span><span class="o">=</s
 </thead>
 <tbody>
 <tr>
-<td><code>&lt;function set_theme at 0x7f0003ef7dc0&gt;</code></td>
+<td><code>&lt;function set_theme at 0x7f0820721f70&gt;</code></td>
 <td>
 <p>sns.set_theme: Environment setting function of seaborn.</p>
 </td>
@@ -5363,7 +5381,7 @@ light_mode<span class="p">(</span><span class="n">grid</span><span class="o">=</
 </thead>
 <tbody>
 <tr>
-<td><code>&lt;function set_theme at 0x7f0003ef7dc0&gt;</code></td>
+<td><code>&lt;function set_theme at 0x7f0820721f70&gt;</code></td>
 <td>
 <p>sns.set_theme: Environment setting function of seaborn.</p>
 </td>
@@ -5401,7 +5419,7 @@ light_mode<span class="p">(</span><span class="n">grid</span><span class="o">=</
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2021</span>
     
   </small>
 </div>

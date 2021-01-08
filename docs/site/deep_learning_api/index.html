@@ -1738,7 +1738,7 @@
                 <h2 id="api-of-the-auto-machine-learning">API of the Auto Machine Learning</h2>
 <hr />
 <div class="doc doc-object doc-module">
-<h2 class="hidden-toc" href="#ai2business.ai_engines.automl_neural_network" id="ai2business.ai_engines.automl_neural_network" style="visibility: hidden; position: absolute;">
+<h2 class="hidden-toc" id="ai2business.ai_engines.automl_neural_network" style="visibility: hidden; position: absolute;">
         </h2>
 <div class="doc doc-contents first">
 <p>Auto Machine Learning Services based on <a href="https://autokeras.com">AutoKERAS</a> for:</p>
@@ -1754,6 +1754,7 @@
 <h2 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLEvaluate">
 
         <code>AutoMLEvaluate</code>
+
 
 
       </h2>
@@ -1784,8 +1785,7 @@
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLEvaluate.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -1856,8 +1856,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLEvaluate.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -1937,6 +1936,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>AutoMLFit</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>Auto Machine Learning Routine for fitting.</p>
@@ -1965,8 +1965,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLFit.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -2085,8 +2084,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLFit.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -2169,6 +2167,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>AutoMLModels</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>The Auto-Machine Learning Models</p>
@@ -2187,8 +2186,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -2338,8 +2336,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.data_classification">
 
-        <code class="highlight language-python">
-data_classification<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">data_classification</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -2454,8 +2451,7 @@ data_classification<span class="p">(</span><span class="bp">self</span><span cla
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.data_regression">
 
-        <code class="highlight language-python">
-data_regression<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">data_regression</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -2559,8 +2555,7 @@ data_regression<span class="p">(</span><span class="bp">self</span><span class="
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.image_classification">
 
-        <code class="highlight language-python">
-image_classification<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">image_classification</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -2650,8 +2645,7 @@ image_classification<span class="p">(</span><span class="bp">self</span><span cl
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.image_regression">
 
-        <code class="highlight language-python">
-image_regression<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">image_regression</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -2729,8 +2723,7 @@ image_regression<span class="p">(</span><span class="bp">self</span><span class=
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.load_model">
 
-        <code class="highlight language-python">
-load_model<span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="s1">'model_autokeras'</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">load_model</span><span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="s1">'model_autokeras'</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-staticmethod"><code>staticmethod</code></small>
@@ -2799,8 +2792,7 @@ load_model<span class="p">(</span><span class="n">model_name</span><span class="
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.multi_model">
 
-        <code class="highlight language-python">
-multi_model<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">multi_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -2885,8 +2877,7 @@ multi_model<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.text_classification">
 
-        <code class="highlight language-python">
-text_classification<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">text_classification</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -2977,8 +2968,7 @@ text_classification<span class="p">(</span><span class="bp">self</span><span cla
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.text_regression">
 
-        <code class="highlight language-python">
-text_regression<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">text_regression</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -3056,8 +3046,7 @@ text_regression<span class="p">(</span><span class="bp">self</span><span class="
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLModels.timeseries_forecaster">
 
-        <code class="highlight language-python">
-timeseries_forecaster<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lookback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">predict_from</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">predict_until</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">timeseries_forecaster</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lookback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">predict_from</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">predict_until</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -3199,6 +3188,7 @@ timeseries_forecaster<span class="p">(</span><span class="bp">self</span><span c
         <code>AutoMLPipeline</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>The Pipeline structure for training and testing of auto machine learning models.</p>
@@ -3206,8 +3196,7 @@ timeseries_forecaster<span class="p">(</span><span class="bp">self</span><span c
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLPipeline.return_automl">
 
-        <code class="highlight">
-return_automl: <span class="nb">dict</span>        </code>
+<code class="highlight language-python"><span class="n">return_automl</span><span class="p">:</span> <span class="nb">dict</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-property"><code>property</code></small>
@@ -3239,8 +3228,7 @@ return_automl: <span class="nb">dict</span>        </code>
 <div class="doc doc-object doc-attribute">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLPipeline.train">
 
-        <code class="highlight">
-train: <span class="n">Any</span>        </code>
+<code class="highlight language-python"><span class="n">train</span><span class="p">:</span> <span class="n">Any</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-property"><code>property</code></small>
@@ -3272,8 +3260,7 @@ train: <span class="n">Any</span>        </code>
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLPipeline.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">train</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">train</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -3321,8 +3308,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLPipeline.run_automl">
 
-        <code class="highlight language-python">
-run_automl<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">run_automl</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
 
       </h3>
@@ -3346,6 +3332,7 @@ run_automl<span class="p">(</span><span class="bp">self</span><span class="p">)<
 <h2 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLPredict">
 
         <code>AutoMLPredict</code>
+
 
 
       </h2>
@@ -3376,8 +3363,7 @@ run_automl<span class="p">(</span><span class="bp">self</span><span class="p">)<
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLPredict.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -3441,8 +3427,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLPredict.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -3519,6 +3504,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>AutoMLRoutines</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>The fitting routine for the different models of <code>AutoMLModels</code>.</p>
@@ -3526,8 +3512,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLRoutines.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -3575,8 +3560,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLRoutines.fit_model">
 
-        <code class="highlight language-python">
-fit_model<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">fit_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 
       </h3>
@@ -3701,6 +3685,7 @@ fit_model<span class="p">(</span><span class="bp">self</span><span class="p">,</
         <code>AutoMLSave</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>Auto Machine Learning Routine for saving</p>
@@ -3729,8 +3714,7 @@ fit_model<span class="p">(</span><span class="bp">self</span><span class="p">,</
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLSave.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_name</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_name</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -3778,8 +3762,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.AutoMLSave.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -3831,6 +3814,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>DataClassification</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>DataClassification</p>
@@ -3859,8 +3843,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.DataClassification.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -4056,8 +4039,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.DataClassification.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -4147,6 +4129,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>DataRegression</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>DataRegression</p>
@@ -4175,8 +4158,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.DataRegression.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -4361,8 +4343,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.DataRegression.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -4451,6 +4432,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>ImageClassification</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>ImageClassification.</p>
@@ -4479,8 +4461,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.ImageClassification.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -4654,8 +4635,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.ImageClassification.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -4741,6 +4721,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>ImageRegression</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>ImageRegression.</p>
@@ -4769,8 +4750,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.ImageRegression.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -4933,8 +4913,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.ImageRegression.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -5021,6 +5000,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>MultiModel</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>MultiModel</p>
@@ -5049,8 +5029,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.MultiModel.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="s1">'greedy'</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="s1">'greedy'</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -5224,8 +5203,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.MultiModel.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -5313,6 +5291,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>Procedure</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>Abstract class of the training procedure.</p>
@@ -5341,8 +5320,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.Procedure.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 
 
       </h3>
@@ -5366,6 +5344,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">)
 <h2 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.TextClassification">
 
         <code>TextClassification</code>
+
 
 
       </h2>
@@ -5396,8 +5375,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">)
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.TextClassification.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">multi_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -5571,8 +5549,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.TextClassification.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -5660,6 +5637,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>TextRegression</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>TextRegression.</p>
@@ -5688,8 +5666,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.TextRegression.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -5852,8 +5829,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.TextRegression.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -5940,6 +5916,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
         <code>TimeseriesForecaster</code>
 
 
+
       </h2>
 <div class="doc doc-contents ">
 <p>TimeseriesForecaster</p>
@@ -5968,8 +5945,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.TimeseriesForecaster.__init__">
 
-        <code class="highlight language-python">
-__init__<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lookback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">predict_from</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">predict_until</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">objective</span><span class="o">=</span><span class="s1">'val_loss'</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">project_name</span><span class="o">=</span><span class="s1">'AutoML_DeepLearning'</span><span class="p">,</span> <span class="n">max_model_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_trials</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tuner</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">output_dim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lookback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">predict_from</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">predict_until</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
   <span class="doc doc-properties">
       <small class="doc doc-property doc-property-special"><code>special</code></small>
@@ -6187,8 +6163,7 @@ __init__<span class="p">(</span><span class="bp">self</span><span class="p">,</s
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="ai2business.ai_engines.automl_neural_network.TimeseriesForecaster.perform_job">
 
-        <code class="highlight language-python">
-perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span>        </code>
+<code class="highlight language-python"><span class="n">perform_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automl_model</span><span class="p">)</span></code>
 
 
       </h3>
@@ -6285,7 +6260,7 @@ perform_job<span class="p">(</span><span class="bp">self</span><span class="p">,
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 8, 2021</span>
     
   </small>
 </div>

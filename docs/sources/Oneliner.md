@@ -1,4 +1,4 @@
-<span style="float:right;">[[source]](https://github.com/ai2business/ai2business/blob/main/ai2business/macros/oneliner.py#L8)</span>
+<span style="float:right;">[[source]](https://github.com/ai2business/ai2business/blob/main/ai2business/macros/oneliner.py#L22)</span>
 
 ### TrendSearch
 

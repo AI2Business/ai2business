@@ -1,0 +1,1599 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Smart solutions for Business with AI.">
+      
+      
+      
+        <meta name="author" content="AI2Business & coworkers">
+      
+      
+        <link rel="canonical" href="https://ai2business.github.io/ai2business/Data_Visualization/">
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
+    
+    
+      
+        <title>Data Visualization - AI2Business</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.75751829.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/version-select.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="dracula" data-md-color-primary="indigo" data-md-color-accent="blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#datavisualization" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://ai2business.github.io/ai2business/" title="AI2Business" class="md-header-nav__button md-logo" aria-label="AI2Business">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            AI2Business
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Data Visualization
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/AI2Business/ai2business/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI2Business
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Sample_Generators/" class="md-tabs__link md-tabs__link--active">
+        Documentation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tutorials/trend_search_tutorial/" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../finance_collector_api/" class="md-tabs__link">
+        API
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ai2business.github.io/ai2business/" title="AI2Business" class="md-nav__button md-logo" aria-label="AI2Business">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    AI2Business
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/AI2Business/ai2business/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI2Business
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Sample_Generators/" class="md-nav__link">
+      Sample Generators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Key_Performance_Collection/" class="md-nav__link">
+      Trend Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../AutoML_for_NeuralNetworks/" class="md-nav__link">
+      AutoMLRun
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Data Visualization
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Data Visualization
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datavisualization" class="md-nav__link">
+    DataVisualization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual_missing_data" class="md-nav__link">
+    visual_missing_data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lineplot" class="md-nav__link">
+    lineplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pointplot" class="md-nav__link">
+    pointplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scatterplot" class="md-nav__link">
+    scatterplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swarmplot" class="md-nav__link">
+    swarmplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distributionplot" class="md-nav__link">
+    distributionplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationalplot" class="md-nav__link">
+    relationalplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categoryplot" class="md-nav__link">
+    categoryplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boxplot" class="md-nav__link">
+    boxplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stripplot" class="md-nav__link">
+    stripplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hexagonplot" class="md-nav__link">
+    hexagonplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#histogramplot" class="md-nav__link">
+    histogramplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#violinplot" class="md-nav__link">
+    violinplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residualplot" class="md-nav__link">
+    residualplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regressionplot" class="md-nav__link">
+    regressionplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densitymap" class="md-nav__link">
+    densitymap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustermap" class="md-nav__link">
+    clustermap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmap" class="md-nav__link">
+    heatmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correlationmap" class="md-nav__link">
+    correlationmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pairmap" class="md-nav__link">
+    pairmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swarmplot_1" class="md-nav__link">
+    swarmplot
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Oneliner/" class="md-nav__link">
+      Oneliner
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" data-md-state="indeterminate" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/trend_search_tutorial/" class="md-nav__link">
+      Trend Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/timeseries_forecast_tutorial/" class="md-nav__link">
+      AutoML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      API
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" data-md-state="indeterminate" type="checkbox" id="nav-4-1" checked>
+    
+    <label class="md-nav__link" for="nav-4-1">
+      Key Performance Collector
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Key Performance Collector" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        Key Performance Collector
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../finance_collector_api/" class="md-nav__link">
+      Finance-Collector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../trends_collector_api/" class="md-nav__link">
+      Trends-Collector
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" data-md-state="indeterminate" type="checkbox" id="nav-4-2" checked>
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Datasets
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Datasets" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        <span class="md-nav__icon md-icon"></span>
+        Datasets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../sample_generator_api/" class="md-nav__link">
+      Sample Generator
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" data-md-state="indeterminate" type="checkbox" id="nav-4-3" checked>
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Visualization
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Visualization" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Visualization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../data_visualization_api/" class="md-nav__link">
+      Data Visualization
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+    
+  
+  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" data-md-state="indeterminate" type="checkbox" id="nav-4-4" checked>
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Auto Machine Learning
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Auto Machine Learning" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        <span class="md-nav__icon md-icon"></span>
+        Auto Machine Learning
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../deep_learning_api/" class="md-nav__link">
+      Deep Learning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datavisualization" class="md-nav__link">
+    DataVisualization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual_missing_data" class="md-nav__link">
+    visual_missing_data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lineplot" class="md-nav__link">
+    lineplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pointplot" class="md-nav__link">
+    pointplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scatterplot" class="md-nav__link">
+    scatterplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swarmplot" class="md-nav__link">
+    swarmplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distributionplot" class="md-nav__link">
+    distributionplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationalplot" class="md-nav__link">
+    relationalplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categoryplot" class="md-nav__link">
+    categoryplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boxplot" class="md-nav__link">
+    boxplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stripplot" class="md-nav__link">
+    stripplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hexagonplot" class="md-nav__link">
+    hexagonplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#histogramplot" class="md-nav__link">
+    histogramplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#violinplot" class="md-nav__link">
+    violinplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residualplot" class="md-nav__link">
+    residualplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regressionplot" class="md-nav__link">
+    regressionplot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#densitymap" class="md-nav__link">
+    densitymap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustermap" class="md-nav__link">
+    clustermap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmap" class="md-nav__link">
+    heatmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correlationmap" class="md-nav__link">
+    correlationmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pairmap" class="md-nav__link">
+    pairmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swarmplot_1" class="md-nav__link">
+    swarmplot
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/AI2Business/ai2business/edit/main/docs/sources/Data_Visualization.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Data Visualization</h1>
+                
+                <p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L718">[source]</a></span></p>
+<h3 id="datavisualization">DataVisualization</h3>
+<div class="highlight"><pre><span></span><code><span class="n">ai2business</span><span class="o">.</span><span class="n">visualization</span><span class="o">.</span><span class="n">data_visualization</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+</code></pre></div>
+<p>DataVisualization is in charge of executing the functions.</p>
+<p>During the execution, <code>DataVisualization</code> can construct several product
+variations using the same building steps.</p>
+<div class="admonition example">
+<p class="admonition-title">General introduction into using plot-functions!</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.macros</span> <span class="kn">import</span> <span class="n">oneliner</span> <span class="k">as</span> <span class="n">one</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">df_dict_years</span> <span class="o">=</span> <span class="n">one</span><span class="o">.</span><span class="n">TrendSearch</span><span class="o">.</span><span class="n">four_step_search</span><span class="p">(</span><span class="n">keyword_list</span><span class="o">=</span><span class="p">[</span> <span class="s2">&quot;2017&quot;</span><span class="p">,</span> <span class="s2">&quot;2018&quot;</span><span class="p">,</span> <span class="s2">&quot;2019&quot;</span><span class="p">,</span> <span class="s2">&quot;2020&quot;</span><span class="p">,</span> <span class="s2">&quot;2021&quot;</span><span class="p">,</span> <span class="p">])</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">df_dict_years</span><span class="p">[</span><span class="s2">&quot;get_interest_over_time&quot;</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+
+<span class="c1"># Here any kind of plot function can be called</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">lineplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Activating hidden functions of the <code>seaborn</code>-module!</p>
+<p>Due to the seaborn module's complexity, only the significant <strong>four</strong>
+variables (x_label, y_label, hue, palette) are defined in
+<code>DesignerDataVisualization</code>. However, all other seaborn-module options
+can be individual activated by<code>**kwargs</code> in each function separately.</p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L771">[source]</a></span></p>
+<h3 id="visual_missing_data">visual_missing_data</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">visual_missing_data</span><span class="p">(</span><span class="n">n_columns</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">per_columns</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;seismic&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<p>Visualizing possible missing data.</p>
+<p>Args:
+    n_columns (int, optional): The cap on the number of columns to include in the filtered DataFrame. Defaults to 0.
+    per_columns (float, optional): The cap on the percentage fill of the columns in the filtered DataFrame. Defaults to 0.0.
+    cmap (str, optional): The color of the heatmap. Defaults to "seismic".</p>
+<div class="admonition note">
+<p class="admonition-title">Visualization of nullity results, respectively, missing values!</p>
+<p>Possible missing data will be visualized by:</p>
+<ol>
+<li>
+<p>nullity matrix highlights out patterns and structures in data completion.</p>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/nullity/get_nullity_matrix_bc6141f519e4eea9e6a0d5fe84115d65.png?raw=true" /></p>
+</li>
+<li>
+<p>nullity bar shows the available data as a series of single bars.</p>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/nullity/get_nullity_bar_9918e972a769781d322ba1e18fe8f86c.png?raw=true" /></p>
+</li>
+<li>
+<p>nullity heatmap point out the correlation between the presence and absence data.</p>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/nullity/get_nullity_heatmap_d46e69f559bd7b713b7a6c3ceb0f9968.png?raw=true" /></p>
+</li>
+<li>
+<p>nullity dendrogram visualize the correlate variable completion.</p>
+<p><img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/nullity/get_nullity_dendrogram_15a148832cd43d6d249d56671a0fab6f.png?raw=true" /></p>
+</li>
+</ol>
+<p>For more information see: <a class="magiclink magiclink-github magiclink-repository" href="https://github.com/ResidentMario/missingno" title="GitHub Repository: ResidentMario/missingno">ResidentMario/missingno</a></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L831">[source]</a></span></p>
+<h3 id="lineplot">lineplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Line Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">lineplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_lineplot_d1f5c1875c5fac03668674031f8af390.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L847">[source]</a></span></p>
+<h3 id="pointplot">pointplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">pointplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Point Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">pointplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/appearance/get_pointplot_3216f41c8e8eb4977ab1870368daea37.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L863">[source]</a></span></p>
+<h3 id="scatterplot">scatterplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Scatter Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_scatterplot_b14dfb01022e343d587d4ba4b39ee56c.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L879">[source]</a></span></p>
+<h3 id="swarmplot">swarmplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Swarm Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_swarmplot_fa34ed63066eb6800f6e4300d3787da2.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L895">[source]</a></span></p>
+<h3 id="distributionplot">distributionplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">distributionplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Distribution Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">distributionplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_distributionplot_68a2aea492d392e6f1b81420cfed43ef.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L910">[source]</a></span></p>
+<h3 id="relationalplot">relationalplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">relationalplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Relational Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">relationalplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_relationalplot_2ca3df8a2c1238c50f00e3822f3b94f1.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L926">[source]</a></span></p>
+<h3 id="categoryplot">categoryplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">categoryplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Category Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">categoryplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_categoryplot_3628ede87a6e217e30435bdcd9a9ce3b.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L942">[source]</a></span></p>
+<h3 id="boxplot">boxplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">multiboxen</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<p>Create a given box plot based on seaborn.</p>
+<p>Args:
+    multiboxen (bool, optional): Allows to draw multi boxen per object. Defaults to False.</p>
+<div class="admonition example">
+<p class="admonition-title">Box Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">multiboxen</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_boxplot_a0023f9b0bc21741142a69f40baf5c43.png?raw=true" />
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">multiboxen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+<span class="err">!</span><span class="p">[</span><span class="n">Placeholder</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">AI2Business</span><span class="o">/</span><span class="n">ai2business</span><span class="o">/</span><span class="n">blob</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">plottypes</span><span class="o">/</span><span class="n">get_boxenplot_56ae2969afd82d78d7585b14e938df29</span><span class="o">.</span><span class="n">png</span><span class="err">?</span><span class="n">raw</span><span class="o">=</span><span class="n">true</span><span class="p">){:</span> <span class="n">loading</span><span class="o">=</span><span class="n">lazy</span> <span class="p">}</span>
+</code></pre></div></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L974">[source]</a></span></p>
+<h3 id="stripplot">stripplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">stripplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Strip Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">stripplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_stripplot_4ce7af555a14c09c6f48ab7b13990dd7.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L990">[source]</a></span></p>
+<h3 id="hexagonplot">hexagonplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">hexagonplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Hexagonal Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">hexagonalplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_hexagonplot_bee62ec100c2ea9dc2bc6e71d18cf3d6.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1006">[source]</a></span></p>
+<h3 id="histogramplot">histogramplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">histogramplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Histogram Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">histogramplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/appearance/get_histogramplot_ceed49b02f48ef9f57e863fbcc98f5dd.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1022">[source]</a></span></p>
+<h3 id="violinplot">violinplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Violin Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">violinplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_violinplot_9956ae30ad1f00a5b5869a4da95754d9.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1038">[source]</a></span></p>
+<h3 id="residualplot">residualplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">residualplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Residual Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">residualplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_violinplot_9956ae30ad1f00a5b5869a4da95754d9.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1054">[source]</a></span></p>
+<h3 id="regressionplot">regressionplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">regressionplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<p>Create a given regression plot based on seaborn.</p>
+<p>Args:
+    map (bool, optional): Creates the regression plot as map. Defaults to False.</p>
+<div class="admonition example">
+<p class="admonition-title">Regression Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">regressionplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_regressionplot_a1987483cda51c9c884abd44b4def6ef.png?raw=true" />
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">regressionmapplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_density_mapplot_aa27faf44d09f3cf3e1ca549bfe12d1b.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1087">[source]</a></span></p>
+<h3 id="densitymap">densitymap</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">densitymap</span><span class="p">(</span><span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<p>Create a given density map based on seaborn.</p>
+<p>Args:
+    kde (bool, optional): Plots the density as kernel density. Defaults to False.</p>
+<div class="admonition example">
+<p class="admonition-title">Density Map Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">kerneldensitymapplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_kerneldensity_mapplot_da7caa95343a14497e78afff0fb304fb.png?raw=true" />
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">densitymapplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_density_mapplot_aa27faf44d09f3cf3e1ca549bfe12d1b.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1120">[source]</a></span></p>
+<h3 id="clustermap">clustermap</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">clustermap</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;pearson&quot;</span><span class="p">,</span> <span class="n">min_periods</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<p>Create a given cluster map based on seaborn.</p>
+<p>Args:
+    method (str, optional): Method of the correlation type ('pearson', 'kendall', 'spearman' or callable method of correlation). Defaults to "pearson".
+    min_periods (int, optional): Minimum number of observations required per pair of columns to have a valid result. Defaults to 1.</p>
+<div class="admonition example">
+<p class="admonition-title">Cluster Map Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">clustermapplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_cluster_mapplot_212509d11bc11b8d2de8e09a98760a5a.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1145">[source]</a></span></p>
+<h3 id="heatmap">heatmap</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Heat Map Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">heatmapplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_heat_mapplot_6efd63f601845f3b57c63a82a360464d.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1161">[source]</a></span></p>
+<h3 id="correlationmap">correlationmap</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">correlationmap</span><span class="p">(</span><span class="n">diagonal</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;pearson&quot;</span><span class="p">,</span> <span class="n">min_periods</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<p>Create a given correlation map based on seaborn.</p>
+<p>Args:
+    diagonal (bool, optional): Only the lower diagonal elements will be plotted. Defaults to False.
+    method (str, optional): Method of the correlation type ('pearson', 'kendall', 'spearman' or callable method of correlation). Defaults to "pearson".
+    min_periods (int, optional): Minimum number of observations required per pair of columns to have a valid result. Defaults to 1.</p>
+<div class="admonition example">
+<p class="admonition-title">Correlation Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">diagonalcorrelationplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_diagonal_correlationplot_edcbab55666e77860eebdc5b73d45b6d.png?raw=true" />
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">correlationplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_correlationplot_227d61e793e336cf86e41ec7b6ec33d6.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L1205">[source]</a></span></p>
+<h3 id="pairmap">pairmap</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">pairmap</span><span class="p">(</span><span class="nb">complex</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<p>Create a pair map based on seaborn.</p>
+<p>Args:
+    complex (bool, optional): Turn on the <code>get_complex_pairmapplot</code>. Defaults to False.</p>
+<div class="admonition example">
+<p class="admonition-title">Pair Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">complexpairmapplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_complex_pairmapplot_fb3ba50582340191e6f1b27328d60f7f.png?raw=true" />
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">pairmapplot</span><span class="p">(</span><span class="nb">map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_pairmapplot_292a3bb10c014dc2dd57a6a12eb608d3.png?raw=true" /></p>
+</div>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/ai2business/ai2business/blob/main/ai2business/visualization/data_visualization.py#L879">[source]</a></span></p>
+<h3 id="swarmplot_1">swarmplot</h3>
+<div class="highlight"><pre><span></span><code><span class="n">DataVisualization</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Swarm Plot</p>
+<p><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ai2business.visualization</span> <span class="kn">import</span> <span class="n">data_visualization</span> <span class="k">as</span> <span class="n">dav</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DataVisualization</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">dav</span><span class="o">.</span><span class="n">DesignerDataVisualization</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">builder</span> <span class="o">=</span> <span class="n">builder</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">builder</span><span class="o">.</span><span class="n">data_figure</span><span class="o">.</span><span class="n">save_all_figures</span><span class="p">(</span><span class="n">folder</span><span class="o">=</span><span class="n">folder</span><span class="p">)</span>
+</code></pre></div>
+<img alt="Placeholder" loading="lazy" src="https://github.com/AI2Business/ai2business/blob/main/docs/images/plottypes/get_swarmplot_fa34ed63066eb6800f6e4300d3787da2.png?raw=true" /></p>
+</div>
+<hr />
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 15, 2021</span>
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../AutoML_for_NeuralNetworks/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                AutoMLRun
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Oneliner/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Oneliner
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 - AI2Business
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/ai2business" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs', 'navigation.sections', 'navigation.expand', 'search.suggest', 'search.highlight'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://unpkg.com/mermaid@8.4.4/dist/mermaid.min.js"></script>
+      
+        <script src="../js/version-select.js"></script>
+      
+    
+  </body>
+</html>

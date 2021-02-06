@@ -91,7 +91,7 @@ regex==2020.11.13
 requests==2.25.1
 send2trash==1.6.0b1
 six==1.15.0
-smmap==3.0.5
+smmap==4.0.0
 snowballstemmer==2.1.0
 soupsieve==2.1 ; python_version >= '3.0'
 sphinx==3.4.3

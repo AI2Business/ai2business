@@ -42,7 +42,7 @@ jupyter==1.0.0
 jupyterlab-pygments==0.1.2
 keras-autodoc==0.7.0
 livereload==2.6.3
-lunr[languages]==0.5.8
+lunr[languages]==0.5.9
 lxml==4.6.2
 markdown==3.3.3
 markupsafe==1.1.1

@@ -114,4 +114,4 @@ urllib3==1.26.3
 wcmatch==8.0.1
 wcwidth==0.2.5
 webencodings==0.5.1
-widgetsnbextension==4.0.0a0
+widgetsnbextension==4.0.0a2

@@ -1,4 +1,4 @@
-## API of the Oneliner
+# API of the Oneliner
 ---
 
 :::ai2business.macros.oneliner

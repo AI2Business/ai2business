@@ -20,7 +20,7 @@ defusedxml==0.7.0rc2
 docutils==0.16
 entrypoints==0.3
 future==0.18.2
-gitdb==4.0.5
+gitdb==4.0.6
 gitpython==3.1.14
 html5lib==1.1
 htmlmin==0.1.12

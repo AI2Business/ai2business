@@ -16,7 +16,7 @@ chardet==4.0.0
 click-man==0.4.1
 click==8.0.0a1
 debugpy==1.2.1
-decorator==5.0.5
+decorator==5.0.6
 defusedxml==0.7.1
 docutils==0.17
 entrypoints==0.3

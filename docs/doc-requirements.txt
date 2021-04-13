@@ -27,7 +27,7 @@ html5lib==1.1
 htmlmin==0.1.12
 idna==2.10
 imagesize==1.2.0
-ipykernel==6.0.0a2
+ipykernel==6.0.0a3
 ipython-genutils==0.2.0
 ipython==7.22.0
 ipywidgets==8.0.0a4
